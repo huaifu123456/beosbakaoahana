@@ -17,7 +17,7 @@ body{background:linear-gradient(160deg,#ffffff 0%,#fff5f9 50%,#ffe4ee 100%);min-
 .top-bar .icons{display:flex;gap:20px;font-size:19px;color:#e28fb0}
 .top-bar .icons i{cursor:pointer}
 
-.banner{height:100px;background:linear-gradient(135deg,#ffd6e5,#ffb6d5,#ff9ec4);position:relative;overflow:hidden;cursor:pointer;background-size:cover;background-position:center}
+.banner{height:100px;background:url('IMG_3857.jpeg') center/cover no-repeat;position:relative;overflow:hidden;cursor:pointer}
 .banner::after{content:'点击更换背景';position:absolute;bottom:6px;right:10px;background:rgba(255,255,255,.85);color:#ff6ea3;font-size:10px;padding:3px 8px;border-radius:10px;font-weight:600;pointer-events:none}
 
 .profile-section{display:flex;padding:0 16px 12px;gap:16px;align-items:flex-end;margin-top:-42px;position:relative;z-index:2}
@@ -151,7 +151,7 @@ body{background:linear-gradient(160deg,#ffffff 0%,#fff5f9 50%,#ffe4ee 100%);min-
   <div class="profile-section">
     <div class="avatar-container">
       <div class="avatar" onclick="document.getElementById('fileAvatar').click()">
-        <img id="avatarImg" src="IMG_3857.jpeg" alt="">
+        <img id="avatarImg" src="IMG_3939.jpeg" alt="">
         <div class="avatar-overlay"><i class="fas fa-camera"></i></div>
       </div>
     </div>
@@ -163,6 +163,7 @@ body{background:linear-gradient(160deg,#ffffff 0%,#fff5f9 50%,#ffe4ee 100%);min-
       <div class="handle" contenteditable="true">@kiss</div>
       <div class="stats">
         <span><b contenteditable="true">3</b> 帖子</span>
+        <span><b contenteditable="true">9K</b> 粉丝</span>
         <span><b contenteditable="true">0</b> 关注</span>
       </div>
     </div>
@@ -177,7 +178,7 @@ body{background:linear-gradient(160deg,#ffffff 0%,#fff5f9 50%,#ffe4ee 100%);min-
 
   <div class="doc-link-box">
     <i class="fas fa-file-alt"></i>
-    <a href="#" contenteditable="true" onclick="event.preventDefault();toast('请修改为你的金山文档链接')">📄 点击查看我的资料文档（金山文档）</a>
+    <a href="#" contenteditable="true" onclick="event.preventDefault();toast('请修改为你的金山文档链接')">雾山影 黑羊</a>
   </div>
 
   <div class="action-buttons">
@@ -224,7 +225,7 @@ body{background:linear-gradient(160deg,#ffffff 0%,#fff5f9 50%,#ffe4ee 100%);min-
       <div class="post-time" contenteditable="true">昨天</div>
     </div>
     <div class="post-content" contenteditable="true">
-      我又不是或使人心的邪祟
+      我又不是惑使人心的邪祟
     </div>
     <div class="post-actions">
       <i class="far fa-heart" onclick="likePost(this)"></i>
@@ -395,8 +396,7 @@ document.getElementById('fileBanner').addEventListener('change', function(e){
 });
 
 function likePost(el){
-  }
- el.classList.toggle('far');
+  el.classList.toggle('far');
   el.classList.toggle('fas');
   el.style.color = el.classList.contains('fas') ? '#ff6ea3' : '';
 }
@@ -406,7 +406,8 @@ function openIntro(){ introOverlay.classList.add('open'); }
 function closeIntro(){ introOverlay.classList.remove('open'); }
 
 const photoOverlay = document.getElementById('photoOverlay');
-function openPhoto(){ photoOverlay.classList.add('open');function closePhoto(){ photoOverlay.classList.remove('open'); }
+function openPhoto(){ photoOverlay.classList.add('open'); }
+function closePhoto(){ photoOverlay.classList.remove('open'); }
 
 const chatOverlay = document.getElementById('chatOverlay');
 const chatBody = document.getElementById('chatBody');
