@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>我的主页</title>
+<title>Qingyan</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Segoe UI',Roboto,Helvetica,Arial,sans-serif;-webkit-tap-highlight-color:transparent}
@@ -138,7 +138,7 @@ body{background:linear-gradient(160deg,#ffffff 0%,#fff5f9 50%,#ffe4ee 100%);min-
   <div class="top-bar">
     <div class="username">
       <i class="fas fa-chevron-left"></i>
-      <span contenteditable="true">my_profile</span>
+      <span contenteditable="true">Qingyan</span>
     </div>
     <div class="icons">
       <i class="fas fa-plus-square" onclick="toast('新建帖子')"></i>
@@ -146,35 +146,32 @@ body{background:linear-gradient(160deg,#ffffff 0%,#fff5f9 50%,#ffe4ee 100%);min-
     </div>
   </div>
 
-  <!-- 横幅：点击换背景 -->
   <div class="banner" id="banner" onclick="document.getElementById('fileBanner').click()"></div>
 
   <div class="profile-section">
     <div class="avatar-container">
       <div class="avatar" onclick="document.getElementById('fileAvatar').click()">
-        <img id="avatarImg" src="https://picsum.photos/id/1005/200/200" alt="">
+        <img id="avatarImg" src="IMG_3857.jpeg" alt="">
         <div class="avatar-overlay"><i class="fas fa-camera"></i></div>
       </div>
     </div>
     <div class="profile-info">
       <div class="display-name">
-        <span contenteditable="true">坏女孩 🎀</span>
+        <span contenteditable="true">Qingyan</span>
         <i class="fas fa-circle-check"></i>
       </div>
-      <div class="handle" contenteditable="true">@bad_girl</div>
+      <div class="handle" contenteditable="true">@kiss</div>
       <div class="stats">
-        <span><b contenteditable="true">128</b> 帖子</span>
-        <span><b contenteditable="true">4.5K</b> 粉丝</span>
-        <span><b contenteditable="true">892</b> 关注</span>
+        <span><b contenteditable="true">3</b> 帖子</span>
+        <span><b contenteditable="true">0</b> 关注</span>
       </div>
     </div>
   </div>
 
   <div class="editable-bio">
     <div class="bio-text" contenteditable="true">
-      ✨ 记录生活的小美好 · 只做自己<br>
-      📍 上海 · 摄影 · 美食 · 深夜emo<br>
-      💕 别太认真，开心就好
+      怎么可剥夺你向爱的权利<br>
+      见面/合作点击信息
     </div>
   </div>
 
@@ -193,11 +190,11 @@ body{background:linear-gradient(160deg,#ffffff 0%,#fff5f9 50%,#ffe4ee 100%);min-
 
   <div class="post">
     <div class="post-header">
-      <div class="post-name" contenteditable="true">坏女孩 🎀</div>
+      <div class="post-name" contenteditable="true">Qingyan</div>
       <div class="post-time" contenteditable="true">刚刚</div>
     </div>
     <div class="post-content" contenteditable="true">
-      今天的晚霞超级好看 🌅 顺手拍了一张，好想跟人分享～
+      今晚排单已满
     </div>
     <div class="post-actions">
       <i class="far fa-heart" onclick="likePost(this)"></i>
@@ -208,11 +205,11 @@ body{background:linear-gradient(160deg,#ffffff 0%,#fff5f9 50%,#ffe4ee 100%);min-
 
   <div class="post">
     <div class="post-header">
-      <div class="post-name" contenteditable="true">坏女孩 🎀</div>
+      <div class="post-name" contenteditable="true">Qingyan</div>
       <div class="post-time" contenteditable="true">3小时前</div>
     </div>
     <div class="post-content" contenteditable="true">
-      下午茶时间 ☕️ 这家咖啡店真的绝了，环境好安静，适合发呆一整天
+      来见我好么 想你
     </div>
     <div class="post-actions">
       <i class="far fa-heart" onclick="likePost(this)"></i>
@@ -223,11 +220,11 @@ body{background:linear-gradient(160deg,#ffffff 0%,#fff5f9 50%,#ffe4ee 100%);min-
 
   <div class="post">
     <div class="post-header">
-      <div class="post-name" contenteditable="true">坏女孩 🎀</div>
+      <div class="post-name" contenteditable="true">Qingyan</div>
       <div class="post-time" contenteditable="true">昨天</div>
     </div>
     <div class="post-content" contenteditable="true">
-      深夜emo模式开启 🌙 有时候真的想找个人聊聊天……
+      我又不是或使人心的邪祟
     </div>
     <div class="post-actions">
       <i class="far fa-heart" onclick="likePost(this)"></i>
@@ -237,13 +234,11 @@ body{background:linear-gradient(160deg,#ffffff 0%,#fff5f9 50%,#ffe4ee 100%);min-
   </div>
 </div>
 
-<!-- 右下角音乐按钮 -->
 <button class="music-btn" id="musicBtn" onclick="toggleMusic()">
   <i class="fas fa-music" id="musicIcon"></i>
 </button>
 <iframe id="musicFrame" style="display:none;width:0;height:0;border:0;" src="about:blank" allow="autoplay"></iframe>
 
-<!-- 认识我 -->
 <div class="overlay" id="introOverlay">
   <div class="overlay-top">
     <span class="back" onclick="closeIntro()"><i class="fas fa-chevron-left"></i></span>
@@ -253,23 +248,23 @@ body{background:linear-gradient(160deg,#ffffff 0%,#fff5f9 50%,#ffe4ee 100%);min-
   <div class="intro-body">
     <div class="intro-block">
       <div class="intro-block-label" contenteditable="true"><i class="fas fa-user"></i> 我的名字</div>
-      <div class="intro-block-content" contenteditable="true">可以叫我小雨，或者随便什么昵称都行～</div>
+      <div class="intro-block-content" contenteditable="true">Qingyan</div>
     </div>
     <div class="intro-block">
       <div class="intro-block-label" contenteditable="true"><i class="fas fa-heart"></i> 我的性格</div>
-      <div class="intro-block-content" contenteditable="true">外表高冷，内心其实很粘人。喜欢撒娇，也爱发脾气，但从不记仇。</div>
+      <div class="intro-block-content" contenteditable="true">外表高冷，内心其实很粘人。</div>
     </div>
     <div class="intro-block">
       <div class="intro-block-label" contenteditable="true"><i class="fas fa-star"></i> 我的爱好</div>
-      <div class="intro-block-content" contenteditable="true">摄影 / 美食 / 深夜写日记 / 一个人去看海</div>
+      <div class="intro-block-content" contenteditable="true">摄影 / 美食 / 深夜写日记</div>
     </div>
     <div class="intro-block">
       <div class="intro-block-label" contenteditable="true"><i class="fas fa-map-marker-alt"></i> 我在哪里</div>
-      <div class="intro-block-content" contenteditable="true">上海，偶尔也去杭州和苏州。</div>
+      <div class="intro-block-content" contenteditable="true">上海</div>
     </div>
     <div class="intro-block">
       <div class="intro-block-label" contenteditable="true"><i class="fas fa-music"></i> 想说的话</div>
-      <div class="intro-block-content" contenteditable="true">如果你看到这里，说明你对我有点好奇。那我们不如聊聊？别太正经，我不喜欢太严肃的人。</div>
+      <div class="intro-block-content" contenteditable="true">怎么可剥夺你向爱的权利，见面/合作点击信息。</div>
     </div>
     <div class="intro-comments">
       <div class="intro-comments-title"><i class="fas fa-comments"></i> 评论</div>
@@ -287,18 +282,10 @@ body{background:linear-gradient(160deg,#ffffff 0%,#fff5f9 50%,#ffe4ee 100%);min-
           <div class="comment-text" contenteditable="true">我也喜欢深夜写日记，握爪～</div>
         </div>
       </div>
-      <div class="comment">
-        <div class="comment-avatar"><img src="https://picsum.photos/id/177/100/100" alt=""></div>
-        <div class="comment-body">
-          <div class="comment-name" contenteditable="true">阿杰</div>
-          <div class="comment-text" contenteditable="true">上海的吗？有空一起喝咖啡。</div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
 
-<!-- 资料（相片纸卡片） -->
 <div class="overlay" id="photoOverlay">
   <div class="overlay-top">
     <span class="back" onclick="closePhoto()"><i class="fas fa-chevron-left"></i></span>
@@ -310,27 +297,27 @@ body{background:linear-gradient(160deg,#ffffff 0%,#fff5f9 50%,#ffe4ee 100%);min-
       <div class="photo-card" data-label="ABOUT ME">
         <div class="photo-card-num">01 / 05</div>
         <div class="photo-card-title" contenteditable="true">我的名字</div>
-        <div class="photo-card-text" contenteditable="true">可以叫我小雨，或者随便什么昵称都行～</div>
+        <div class="photo-card-text" contenteditable="true">Qingyan</div>
       </div>
       <div class="photo-card" data-label="PERSONALITY">
         <div class="photo-card-num">02 / 05</div>
         <div class="photo-card-title" contenteditable="true">我的性格</div>
-        <div class="photo-card-text" contenteditable="true">外表高冷，内心其实很粘人。喜欢撒娇，也爱发脾气，但从不记仇。</div>
+        <div class="photo-card-text" contenteditable="true">外表高冷，内心其实很粘人。</div>
       </div>
       <div class="photo-card" data-label="HOBBIES">
         <div class="photo-card-num">03 / 05</div>
         <div class="photo-card-title" contenteditable="true">我的爱好</div>
-        <div class="photo-card-text" contenteditable="true">摄影 / 美食 / 深夜写日记 / 一个人去看海</div>
+        <div class="photo-card-text" contenteditable="true">摄影 / 美食 / 深夜写日记</div>
       </div>
       <div class="photo-card" data-label="LOCATION">
         <div class="photo-card-num">04 / 05</div>
         <div class="photo-card-title" contenteditable="true">我在哪里</div>
-        <div class="photo-card-text" contenteditable="true">上海，偶尔也去杭州和苏州。</div>
+        <div class="photo-card-text" contenteditable="true">上海</div>
       </div>
       <div class="photo-card" data-label="WORDS">
         <div class="photo-card-num">05 / 05</div>
         <div class="photo-card-title" contenteditable="true">想说的话</div>
-        <div class="photo-card-text" contenteditable="true">如果你看到这里，说明你对我有点好奇。那我们不如聊聊？别太正经，我不喜欢太严肃的人。</div>
+        <div class="photo-card-text" contenteditable="true">怎么可剥夺你向爱的权利，见面/合作点击信息。</div>
       </div>
     </div>
     <div class="photo-hint">
@@ -341,12 +328,11 @@ body{background:linear-gradient(160deg,#ffffff 0%,#fff5f9 50%,#ffe4ee 100%);min-
   </div>
 </div>
 
-<!-- 聊天 -->
 <div class="chat-overlay" id="chatOverlay">
   <div class="chat-header">
     <span class="back" onclick="closeChat()"><i class="fas fa-chevron-left"></i></span>
     <div>
-      <div class="chat-name" contenteditable="true">坏女孩 🎀</div>
+      <div class="chat-name" contenteditable="true">Qingyan</div>
       <div class="chat-status">在线</div>
     </div>
   </div>
@@ -363,7 +349,6 @@ body{background:linear-gradient(160deg,#ffffff 0%,#fff5f9 50%,#ffe4ee 100%);min-
 <div class="toast" id="toast"></div>
 
 <script>
-/* 音乐：点右下角按钮播放/停止 */
 let musicPlaying = false;
 function toggleMusic(){
   const iframe = document.getElementById('musicFrame');
@@ -384,7 +369,6 @@ function toggleMusic(){
   }
 }
 
-/* 头像更换 */
 document.getElementById('fileAvatar').addEventListener('change', function(e){
   const file = e.target.files[0];
   if(!file) return;
@@ -397,7 +381,6 @@ document.getElementById('fileAvatar').addEventListener('change', function(e){
   e.target.value = '';
 });
 
-/* 背景更换 */
 document.getElementById('fileBanner').addEventListener('change', function(e){
   const file = e.target.files[0];
   if(!file) return;
@@ -411,24 +394,20 @@ document.getElementById('fileBanner').addEventListener('change', function(e){
   e.target.value = '';
 });
 
-/* 点赞 */
 function likePost(el){
-  el.classList.toggle('far');
+  }
+ el.classList.toggle('far');
   el.classList.toggle('fas');
   el.style.color = el.classList.contains('fas') ? '#ff6ea3' : '';
 }
 
-/* 认识我 */
 const introOverlay = document.getElementById('introOverlay');
 function openIntro(){ introOverlay.classList.add('open'); }
 function closeIntro(){ introOverlay.classList.remove('open'); }
 
-/* 资料 */
 const photoOverlay = document.getElementById('photoOverlay');
-function openPhoto(){ photoOverlay.classList.add('open'); }
-function closePhoto(){ photoOverlay.classList.remove('open'); }
+function openPhoto(){ photoOverlay.classList.add('open');function closePhoto(){ photoOverlay.classList.remove('open'); }
 
-/* 聊天 */
 const chatOverlay = document.getElementById('chatOverlay');
 const chatBody = document.getElementById('chatBody');
 let chatOpened = false;
@@ -474,16 +453,14 @@ function sendMsg(){
   input.value = '';
 }
 
-/* 分享链接 */
 function sharePage(){
   if(navigator.share){
-    navigator.share({title:'我的主页',text:'来看看我的主页吧～',url:location.href}).catch(()=>{});
+    navigator.share({title:'Qingyan',text:'来看看我的主页吧～',url:location.href}).catch(()=>{});
   }else{
     toast('长按网址复制分享给朋友吧～');
   }
 }
 
-/* 提示 */
 function toast(msg){
   const t = document.getElementById('toast');
   t.textContent = msg;
